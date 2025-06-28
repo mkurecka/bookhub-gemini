@@ -1,0 +1,124 @@
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --info-color: #17a2b8;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --background-color: #f4f7f6;
+  --text-color: #333;
+  --header-bg: #2c3e50;
+  --header-text: #ecf0f1;
+  --footer-bg: #2c3e50;
+  --footer-text: #ecf0f1;
+  --card-bg: #ffffff;
+  --border-color: #dee2e6;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--dark-color);
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.my-3 {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.py-3 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+/* Custom styles for Bootstrap components */
+.navbar {
+  background-color: var(--header-bg) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--header-text);
+}
+
+.navbar-dark .navbar-brand {
+  color: var(--header-text);
+}
+
+.main-footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 1rem 0;
+  margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 0.25rem;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: darken(var(--primary-color), 10%) !important;
+  border-color: darken(var(--primary-color), 10%) !important;
+}
+
+.form-control {
+  border-color: var(--border-color);
+}
+
+.home-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1521587765099-8835e7201186?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.home-hero h1 {
+  color: white;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-hero p {
+  font-size: 1.5rem;
+}
+
+.home-hero .btn {
+  margin-top: 2rem;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
