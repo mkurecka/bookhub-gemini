@@ -106,12 +106,11 @@ const deleteBook = async (req, res) => {
   const { id } = req.params;
 
   try {
-    const { rowCount } = await pool.query('DELETE FROM books WHERE id = $1', [id]);
-
+    const { rowCount } = await pool.query('DELETE FROM users WHERE id = $1', [id]);
     if (rowCount === 0) {
-      return res.status(404).json({ message: 'Book not found' });
+      return res.status(404).json({ message: 'User not found' });
     }
-    res.status(204).send();
+    res.json({ message: 'User removed' });
   } catch (error) {
     res.status(500).json({ message: 'Server error' });
   }
